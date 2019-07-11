@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+      <script src="StarPlot.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <style>
+         body { font-family: Arial; }
+         .selettori {
+     		  position: absolute;
+     		  top: 10px;
+     		  left: 800px;
+          width: 200px;
+     		}
+      </style>
+   </head>
+
+   <body>
+
+      <div id = "svgcontainer">
+      </div>
+      <form name="myform" onSubmit="return handleClick()">
+          <div class='selettori'>
+            <label for="username">Player 1</label>
+            <input type="text" class="form-control" id="myVal1" placeholder="Add some text&hellip;" value="" required="">
+          </br>
+            <label for="username">Player 2</label>
+            <input type="text" class="form-control" id="myVal2" placeholder="Add some text&hellip;" value="" required="">
+          </br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Ok</button>
+
+          </div>
+        </form>
+        <ul></ul>
+      <script type="text/javascript" src="manipolazioneDati.js"></script>
+
+   </body>
+</html>
